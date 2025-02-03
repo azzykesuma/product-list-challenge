@@ -5,10 +5,10 @@ export const menuData = [
     type: "Waffle",
     price: 6.50,
     images: {
-      mobile: "/src/assets/images/image-waffle-mobile.jpg",
-      tablet: "/src/assets/images/image-waffle-tablet.jpg",
-      desktop: "/src/assets/images/image-waffle-desktop.jpg",
-      thumbnail: "/src/assets/images/image-waffle-thumbnail.jpg",
+      mobile: "/public/assets/images/image-waffle-mobile.jpg",
+      tablet: "/public/assets/images/image-waffle-tablet.jpg",
+      desktop: "/public/assets/images/image-waffle-desktop.jpg",
+      thumbnail: "/public/assets/images/image-waffle-thumbnail.jpg",
     },
   },
   {
@@ -17,10 +17,10 @@ export const menuData = [
     type: "Crème Brûlée",
     price: 7.00,
     images: {
-      mobile: "/src/assets/images/image-creme-brulee-mobile.jpg",
-      tablet: "/src/assets/images/image-creme-brulee-tablet.jpg",
-      desktop: "/src/assets/images/image-creme-brulee-desktop.jpg",
-      thumbnail: "/src/assets/images/image-creme-brulee-thumbnail.jpg",
+      mobile: "/public/assets/images/image-creme-brulee-mobile.jpg",
+      tablet: "/public/assets/images/image-creme-brulee-tablet.jpg",
+      desktop: "/public/assets/images/image-creme-brulee-desktop.jpg",
+      thumbnail: "/public/assets/images/image-creme-brulee-thumbnail.jpg",
     },
   },
   {
@@ -29,10 +29,10 @@ export const menuData = [
     type: "Macaron",
     price: 8.00,
     images: {
-      mobile: "/src/assets/images/image-macaron-mobile.jpg",
-      tablet: "/src/assets/images/image-macaron-tablet.jpg",
-      desktop: "/src/assets/images/image-macaron-desktop.jpg",
-      thumbnail: "/src/assets/images/image-macaron-thumbnail.jpg",
+      mobile: "/public/assets/images/image-macaron-mobile.jpg",
+      tablet: "/public/assets/images/image-macaron-tablet.jpg",
+      desktop: "/public/assets/images/image-macaron-desktop.jpg",
+      thumbnail: "/public/assets/images/image-macaron-thumbnail.jpg",
     },
   },
   {
@@ -41,10 +41,10 @@ export const menuData = [
     type: "Tiramisu",
     price: 5.50,
     images: {
-      mobile: "/src/assets/images/image-tiramisu-mobile.jpg",
-      tablet: "/src/assets/images/image-tiramisu-tablet.jpg",
-      desktop: "/src/assets/images/image-tiramisu-desktop.jpg",
-      thumbnail: "/src/assets/images/image-tiramisu-thumbnail.jpg",
+      mobile: "/public/assets/images/image-tiramisu-mobile.jpg",
+      tablet: "/public/assets/images/image-tiramisu-tablet.jpg",
+      desktop: "/public/assets/images/image-tiramisu-desktop.jpg",
+      thumbnail: "/public/assets/images/image-tiramisu-thumbnail.jpg",
     },
   },
   {
@@ -53,10 +53,10 @@ export const menuData = [
     type: "Baklava",
     price: 4.00,
     images: {
-      mobile: "/src/assets/images/image-baklava-mobile.jpg",
-      tablet: "/src/assets/images/image-baklava-tablet.jpg",
-      desktop: "/src/assets/images/image-baklava-desktop.jpg",
-      thumbnail: "/src/assets/images/image-baklava-thumbnail.jpg",
+      mobile: "/public/assets/images/image-baklava-mobile.jpg",
+      tablet: "/public/assets/images/image-baklava-tablet.jpg",
+      desktop: "/public/assets/images/image-baklava-desktop.jpg",
+      thumbnail: "/public/assets/images/image-baklava-thumbnail.jpg",
     },
   },
   {
@@ -65,10 +65,10 @@ export const menuData = [
     type: "Pie",
     price: 5.00,
     images: {
-      mobile: "/src/assets/images/image-meringue-mobile.jpg",
-      tablet: "/src/assets/images/image-meringue-tablet.jpg",
-      desktop: "/src/assets/images/image-meringue-desktop.jpg",
-      thumbnail: "/src/assets/images/image-meringue-thumbnail.jpg",
+      mobile: "/public/assets/images/image-meringue-mobile.jpg",
+      tablet: "/public/assets/images/image-meringue-tablet.jpg",
+      desktop: "/public/assets/images/image-meringue-desktop.jpg",
+      thumbnail: "/public/assets/images/image-meringue-thumbnail.jpg",
     },
   },
   {
@@ -77,10 +77,10 @@ export const menuData = [
     type: "Cake",
     price: 4.50,
     images: {
-      mobile: "/src/assets/images/image-cake-mobile.jpg",
-      tablet: "/src/assets/images/image-cake-tablet.jpg",
-      desktop: "/src/assets/images/image-cake-desktop.jpg",
-      thumbnail: "/src/assets/images/image-cake-thumbnail.jpg",
+      mobile: "/public/assets/images/image-cake-mobile.jpg",
+      tablet: "/public/assets/images/image-cake-tablet.jpg",
+      desktop: "/public/assets/images/image-cake-desktop.jpg",
+      thumbnail: "/public/assets/images/image-cake-thumbnail.jpg",
     },
   },
   {
@@ -89,10 +89,10 @@ export const menuData = [
     type: "Brownie",
     price: 4.50,
     images: {
-      mobile: "/src/assets/images/image-brownie-mobile.jpg",
-      tablet: "/src/assets/images/image-brownie-tablet.jpg",
-      desktop: "/src/assets/images/image-brownie-desktop.jpg",
-      thumbnail: "/src/assets/images/image-brownie-thumbnail.jpg",
+      mobile: "/public/assets/images/image-brownie-mobile.jpg",
+      tablet: "/public/assets/images/image-brownie-tablet.jpg",
+      desktop: "/public/assets/images/image-brownie-desktop.jpg",
+      thumbnail: "/public/assets/images/image-brownie-thumbnail.jpg",
     },
   },
   {
@@ -101,10 +101,10 @@ export const menuData = [
     type: "Panna Cotta",
     price: 6.50,
     images: {
-      mobile: "/src/assets/images/image-panna-cotta-mobile.jpg",
-      tablet: "/src/assets/images/image-panna-cotta-tablet.jpg",
-      desktop: "/src/assets/images/image-panna-cotta-desktop.jpg",
-      thumbnail: "/src/assets/images/image-panna-cotta-thumbnail.jpg",
+      mobile: "/public/assets/images/image-panna-cotta-mobile.jpg",
+      tablet: "/public/assets/images/image-panna-cotta-tablet.jpg",
+      desktop: "/public/assets/images/image-panna-cotta-desktop.jpg",
+      thumbnail: "/public/assets/images/image-panna-cotta-thumbnail.jpg",
     },
   },
 ];

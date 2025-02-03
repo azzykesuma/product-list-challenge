@@ -1,4 +1,4 @@
-import emptyIllustration from '@/assets/images/illustration-empty-cart.svg';
+import emptyIllustration from '/public/assets/images/illustration-empty-cart.svg';
 import useCartContext from '@/hooks/useCartContext';
 import CartPreview from './CartPreview';
 import { ScrollArea } from './ui/scroll-area';
