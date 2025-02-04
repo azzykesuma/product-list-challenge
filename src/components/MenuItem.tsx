@@ -14,9 +14,10 @@ interface MenuItemProps {
     desktop: string;
     thumbnail: string;
   };
+  index: number;
 }
 
-const MenuItem = ({ id, price, title, type, images }: MenuItemProps) => {
+const MenuItem = ({ id, price, title, type, images, index }: MenuItemProps) => {
   const { setCart, cart } = useCartContext();
   const cartItem = cart.find((item) => item.id === id);
   const handleCart = (id: number) => {
@@ -59,11 +60,22 @@ const MenuItem = ({ id, price, title, type, images }: MenuItemProps) => {
 
   return (
     <div>
-      <div className={`shadow-lg rounded-lg ${cartItem ? 'border border-red' : undefined}`}>
+      <div
+        className={`shadow-lg rounded-lg ${
+          cartItem ? "border border-red" : undefined
+        }`}
+      >
         <picture className={`relative`}>
           <source media="(min-width: 1024px)" srcSet={images.desktop} />
           <source media="(min-width: 768px)" srcSet={images.tablet} />
-          <img src={images.mobile} alt={title} className="rounded-lg w-full" />
+          <img
+            src={images.mobile}
+            alt={title}
+            className="rounded-lg w-full"
+            width={300}
+            height={200}
+            fetchPriority={index === 0 ? "high" : "auto"}
+          />
 
           {cartItem ? (
             <QuantityControl
@@ -78,9 +90,11 @@ const MenuItem = ({ id, price, title, type, images }: MenuItemProps) => {
       </div>
 
       <div className="my-5 space-y-1">
-        <h2 className="text-rose-500">{type}</h2>
+        <h2 className="text-black">{type}</h2>
         <h3 className="font-semibold">{title}</h3>
-        <p className="text-red font-semibold">${price.toFixed(2)}</p>
+        <p className="text-price font-semibold" aria-label="price">
+          ${price.toFixed(2)}
+        </p>
       </div>
     </div>
   );
