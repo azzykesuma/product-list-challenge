@@ -10,7 +10,7 @@ interface QuantityControlProps {
 const QuantityControl = ({ qty, handleAddQty, handleReduceQty }: QuantityControlProps) => {
   return (
       <m.div
-        className="mx-auto bg-red absolute bottom-[-20px] left-1/2 -translate-x-1/2 flex gap-2 justify-between items-center w-[150px] rounded-full"
+        className="absolute left-1/2 -translate-x-1/2 bottom-[-20px] mx-auto bg-red flex gap-2 justify-between items-center w-[150px] rounded-full"
       >
         <m.button
           className="text-sm font-semibold px-4 py-2 rounded-full text-black"

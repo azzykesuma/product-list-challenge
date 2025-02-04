@@ -42,7 +42,7 @@ export const menuData = [
     price: 5.50,
     images: {
       mobile: "/image-tiramisu-mobile.webp",
-      tablet: "/image-tiramisu-tablet.jpg",
+      tablet: "/image-tiramisu-tablet.webp",
       desktop: "/image-tiramisu-desktop.webp",
       thumbnail: "/image-tiramisu-thumbnail.jpg",
     },

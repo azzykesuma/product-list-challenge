@@ -61,32 +61,33 @@ const MenuItem = ({ id, price, title, type, images, index }: MenuItemProps) => {
   return (
     <div>
       <div
-        className={`shadow-lg rounded-lg ${
-          cartItem ? "border border-red" : undefined
-        }`}
+        className={` relative `}
       >
-        <picture className={`relative`}>
-          <source media="(min-width: 1024px)" srcSet={images.desktop} />
-          <source media="(min-width: 768px)" srcSet={images.tablet} />
-          <img
-            src={images.mobile}
-            alt={title}
-            className="rounded-lg w-full"
-            width={300}
-            height={200}
-            fetchPriority={index === 0 ? "high" : "auto"}
-          />
-
-          {cartItem ? (
-            <QuantityControl
-              qty={cartItem.qty}
-              handleAddQty={() => handleAddQty(id)}
-              handleReduceQty={() => handleReduceQty(id)}
+        <div className={`shadow-lg rounded-lg ${
+          cartItem ? "border border-red" : undefined
+        }`}>
+          <picture className={`relative`}>
+            <source media="(min-width: 1024px)" srcSet={images.desktop} />
+            <source media="(min-width: 768px)" srcSet={images.tablet} />
+            <img
+              src={images.mobile}
+              alt={title}
+              className="rounded-lg w-full"
+              width={300}
+              height={200}
+              fetchPriority={index === 0 ? "high" : "auto"}
             />
-          ) : (
-            <AddToCartButton handleAddToCart={() => handleCart(id)} />
-          )}
-        </picture>
+          </picture>
+        </div>
+        {cartItem ? (
+          <QuantityControl
+            qty={cartItem.qty}
+            handleAddQty={() => handleAddQty(id)}
+            handleReduceQty={() => handleReduceQty(id)}
+          />
+        ) : (
+          <AddToCartButton handleAddToCart={() => handleCart(id)} />
+        )}
       </div>
 
       <div className="my-5 space-y-1">

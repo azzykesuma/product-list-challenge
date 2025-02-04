@@ -11,6 +11,7 @@ import { CircleCheck } from 'lucide-react';
 import CartPreviewItems from './CartPreviewItems';
 import { Button } from './ui/button';
 import { ICartObject } from '@/context/CartContext';
+import { ScrollArea } from './ui/scroll-area';
 
 interface CartDrawerProps {
     openDrawer: boolean;
@@ -45,15 +46,17 @@ const CartDrawer = ({
         <VisuallyHidden>
           <DrawerDescription></DrawerDescription>
         </VisuallyHidden>
-        <div className="p-4 bg-rose-100 rounded-lg space-y-4">
-          {cart.map((item) => (
-            <CartPreviewItems key={item.id} {...item} confirmOrder />
-          ))}
-          <div className="flex justify-between items-center">
-            <h3>Order Total</h3>
-            <p className="text-3xl font-bold">${totalCartPrice.toFixed(2)}</p>
+        <ScrollArea className="h-[200px]">
+          <div className="p-4 bg-rose-100 rounded-lg space-y-4">
+            {cart.map((item) => (
+              <CartPreviewItems key={item.id} {...item} confirmOrder />
+            ))}
+            <div className="flex justify-between items-center">
+              <h3>Order Total</h3>
+              <p className="text-3xl font-bold">${totalCartPrice.toFixed(2)}</p>
+            </div>
           </div>
-        </div>
+        </ScrollArea>
         <div className="w-full md:w-1/2 mx-auto">
           <Button
             onClick={handleClearCart}

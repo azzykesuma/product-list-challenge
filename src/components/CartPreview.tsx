@@ -14,7 +14,7 @@ import CartPreviewItems from './CartPreviewItems';
 import { Button } from './ui/button';
 import { ScrollArea } from "./ui/scroll-area";
 
-const CartPreview = () => {
+const   CartPreview = () => {
   const { cart, setCart } = useCartContext();
   const [openDrawer, setOpenDrawer] = useState(false);
   const [openModal, setOpenModal] = useState(false);
@@ -50,7 +50,7 @@ const CartPreview = () => {
             This is a <strong>carbon-neutral</strong> delivery
           </p>
         </div>
-        <div className="w-full mx-auto mt-auto">
+        <div className="absolute md:static bottom-0 w-full mx-auto mt-auto">
           <Button
             onClick={handleOpenConfirmation}
             className=" w-full rounded-full py-6 bg-red"
