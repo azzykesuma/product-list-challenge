@@ -93,7 +93,7 @@ const MenuItem = ({ id, price, title, type, images, index }: MenuItemProps) => {
       <div className="my-5 space-y-1">
         <h2 className="text-black">{type}</h2>
         <h3 className="font-semibold">{title}</h3>
-        <p className="text-price font-semibold" aria-label="price">
+        <p className="text-red  font-semibold" aria-label="price">
           ${price.toFixed(2)}
         </p>
       </div>
