@@ -9,7 +9,6 @@ function App() {
       <div className="flex flex-col lg:grid lg:grid-cols-[70%_30%] lg:gap-6">
         <ScrollArea className="h-screen md:h-[80vh] pb-10" scrollHideDelay={0}>
           <Menu />
-          {/* on tablet above, this section will be removed and placed outside of the scroll area */}
           <div className="mt-4 w-full lg:mt-0 lg:hidden">
             <Cart />
           </div>
